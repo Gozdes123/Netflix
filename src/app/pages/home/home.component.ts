@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  // 追蹤電影的data
   trendingData() {
     this.movieService.trendingMovieApi().subscribe((result) => {
       this.trendingMovieResult = result.results;
