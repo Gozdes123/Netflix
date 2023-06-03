@@ -21,7 +21,7 @@
           <img
             src="https://image.tmdb.org/t/p/original/{{ data.poster_path }}"
             alt=""
-            routerLink=""
+            [routerLink]="['/movie',data.id]"
           />
         </div>
         <div class="col-lg-9 mt-4 mb-4">
