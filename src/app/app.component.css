@@ -6,3 +6,7 @@
 .navbar-nav .nav-item .nav-link {
   color: #e50914;
 }
+
+.navbg {
+  background-color: rgba(0, 0, 0, 0.415);
+}
