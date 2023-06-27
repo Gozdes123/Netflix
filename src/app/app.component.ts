@@ -7,4 +7,14 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'netflix';
+  navbg: any;
+  @HostListener('document:scroll') scrollover() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+      this.navbg = {
+        'background-color': '#000000',
+      };
+    } else {
+      this.navbg = {};
+    }
+  }
 }
